@@ -8,6 +8,7 @@ import { FairPlay } from './components/FairPlay';
 import { TopScorers } from './components/TopScorers';
 import { MVPCards } from './components/MVPCards';
 import clsx from 'clsx';
+import HeroLogo from './components/HeroLogo';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -92,12 +93,13 @@ function App() {
             backgroundImage: 'url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2000&auto=format&fit=crop")'
           }}
         ></div>
-        <div className="container mx-auto px-6 relative z-20 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Zonal Baby Fútbol<br/>Masculino 2025
+        <div className="container mx-auto px-6 relative z-20 text-center flex flex-col items-center">
+          <HeroLogo width={300} height={500}  />
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 ">          
+            Masculino 2025
           </h1>
           <p className="text-xl md:text-2xl text-white mb-8">
-            Clasificatorio al Zonal Nacional Sur Occidente de Colombia
+            Clasificatorio al Zonal Nacional Sur Occidente de Colombia 2025
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <div className="flex items-center bg-white/90 rounded-lg px-6 py-3">
